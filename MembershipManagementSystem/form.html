@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h2>XYZ Membership Management System</h2>
+        <form action="/submit" method="post">
+        Member ID:
+        <input type="text" id="member_id" name="ID" value=""><br><br>
+
+        Fullname:
+        <input type="text" id="fullname" name="fullname" value=""><br><br>
+
+        Gender:
+        <select name="gender">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        </select><br><br>
+
+        Status:
+        <select name="status">
+        <option value="Single">Single</option>
+        <option value="Married">Married</option>
+        <option value="Widow/er">Widow/er</option>
+        </select><br><br>
+
+        Religion:
+        <input type="text" id="religion" name="religion" value=""><br><br>
+
+        Citizenship:
+        <input type="text" id="citizenship" name="citizenship" value=""><br><br>
+
+        Type of Membership:
+        <input type="radio" id="new" name="membership_type" value="New">
+        <label for="new">New</label>
+        <input type="radio" id="renew" name="membership_type" value="Renew">
+        <label for="renew">Renew</label><br><br>
+
+        Year of Membership:
+        <input type="text" id="year_of_membership" name="year_of_membership" value=""><br><br>
+
+        School Affiliated:
+        <input type="text" id="school_affiliated" name="school_affiliated" value=""><br><br>
+
+        Interest: <br>
+        <input type="checkbox" id="presentation" name="interest" value="Presentation">
+        Presentation <br>
+        <input type="checkbox" id="publication" name="interest" value="Publication">
+        Publication <br>
+        <input type="checkbox" id="pres_pub" name="interest" value="Presentation/Publication">
+        Presentation/Publication <br>
+        <input type="checkbox" id="reviewer" name="interest" value="Reviewer">
+        Reviewer <br>
+        <input type="checkbox" id="organizer" name="interest" value="Organizer">
+        Organizer <br><br>
+
+        <button type="submit">Submit</button>
+        </form>
+</body>
+</html>
