@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!-- THIS IS ONLY A SAMPLE RESUME -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script> 
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/font.css">
+    <title>RESUME USING VUE JS</title>
+</head>
+<body>
+    <main id="app">
+        <div id="title" class="title">
+            <h2 class="section">{{ name }}</h2>
+            <p class="contacts">| {{ email }} | {{ number }} | {{ github }} |</p>
+        </div>
+
+        <!--===================== EDUCATION =====================-->
+        <h2 class="section">{{ section1 }}</h2><hr>
+        <div class="education__container">
+            <div class="educ__content">
+                <div class="school">
+                    <h3 class="semibold educ__school">{{ school }}</h3>
+                    <h3 class="semibold educ__school schl">{{ schoolAddress }}</h3>
+                </div>
+                <div class="course">
+                    <p class="educ__content crse"><em>{{ course }}</em></p>
+                    <p class="educ__content">{{ schoolYear }}</p>
+                </div>
+                <div class="honor">
+                    <p class="educ__content">{{ honor }}</p>
+                    <p class="educ__content">GPA: <span class="semibold">{{ gpa }}</span></p>
+                </div>
+            </div>
+
+            <div class="coursework">
+                <p class="relevant">Relevant Coursework:</p>
+                <ul>
+                    <li v-for="course in relevantCoursework" class="coursework">● {{ course }}</li>
+                </ul>
+            </div>
+        </div>
+
+        <!--===================== PROJECTS =====================-->
+        <h2 class="section">{{ section2 }}</h2><hr>
+        <div class="projects__container">
+            <div v-for="(project, index) in projects" :key="index" class="project">
+                <h3 class="semibold project__name">{{ project.name }}</h3>
+                <ul>
+                    <li class="description">● {{ project.description }}</li>
+                    <li class="made">● {{ project.made }}</li>
+                </ul>
+            </div>
+        </div>
+
+        <!--===================== CERTIFICATES =====================-->
+        <h2 class="section">{{ section3 }}</h2><hr>
+        <div class="certificate__container">
+            <ul>
+                <li v-for="cert in certificates" class="certificates">● {{ cert }}</li>
+            </ul>
+        </div>
+
+        <!--===================== TECHNICAL SKILLS =====================-->
+        <h2 class="section">{{ section4 }}</h2><hr>
+        
+        <div class="skillset__container">
+            <ul>
+                <li v-for="skill in skillset" :key="skill" class="skills">● {{ skill }}</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 | Bryan Aaron B. Santiago | </p>
+    </footer>
+    
+    <script src="script/script.js"></script>
+</body>
+</html>
