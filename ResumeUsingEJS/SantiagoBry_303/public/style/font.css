@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'GeneralSans-Extralight';
+    src: url('../fonts/GeneralSans-Extralight.otf') format('opentype');
+    font-weight: 200;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GeneralSans-ExtralightItalic';
+    src: url('../fonts/GeneralSans-ExtralightItalic.otf') format('opentype');
+    font-weight: 200;
+    font-display: swap;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'GeneralSans-Light';
+    src: url('../fonts/GeneralSans-Light.otf') format('opentype');
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GeneralSans-LightItalic';
+    src: url('../fonts/GeneralSans-LightItalic.otf') format('opentype');
+    font-weight: 300;
+    font-display: swap;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'GeneralSans-Regular';
+    src: url('../fonts/GeneralSans-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GeneralSans-Italic';
+    src: url('../fonts/GeneralSans-Italic.otf') format('opentype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'GeneralSans-Medium';
+    src: url('../fonts/GeneralSans-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GeneralSans-MediumItalic';
+    src: url('../fonts/GeneralSans-MediumItalic.otf') format('opentype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'GeneralSans-Semibold';
+    src: url('../fonts/GeneralSans-Semibold.otf') format('opentype');
+    font-weight: 600;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GeneralSans-SemiboldItalic';
+    src: url('../fonts/GeneralSans-SemiboldItalic.otf') format('opentype');
+    font-weight: 600;
+    font-display: swap;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'GeneralSans-Bold';
+    src: url('../fonts/GeneralSans-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+  
